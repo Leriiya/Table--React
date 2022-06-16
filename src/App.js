@@ -23,6 +23,7 @@ function App() {
 
   const detailRow = (row) => {
     return (setRowItem(row))
+    
   }
 
   return (
