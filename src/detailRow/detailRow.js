@@ -4,28 +4,26 @@ const DetailItem = ({ detailItemData }) => {
     return (
         <div>
             <div>
-                id:  <b>{detailItemData.id}</b>
+                название:  <b>{detailItemData.description}</b>
             </div>
             <div>
-                firstName: <b>{detailItemData.firstName}</b>
+                ед.изм.: <b>{detailItemData.quantity}</b>
             </div>
             <div>
-                lastName: <b>{detailItemData.lastName}</b>
+                цена розн: <b>{detailItemData.price_one}</b>
             </div>
             <div>
-                email: <b>{detailItemData.email}</b>
+                цена опт: <b>{detailItemData.price_lot}</b>
             </div>
             <div>
-                description: <b>{detailItemData.description}</b>
+                объём опта: <b>{detailItemData.volume}</b>
             </div>
-
-            {/* <div>
-                streetAddress: <b>{detailItemData.address.streetAddress}</b>
-            </div> */}
-            {/* <div>
-                city: <b>{detailItemData.address.city}</b>
-            </div> */}
-
+            <div>
+                компания: <b>{detailItemData.company}</b>
+            </div>
+            <div>
+                телефон: <b>{detailItemData.phone}</b>
+            </div>
         </div>
     )
 }
